@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+     scroll-padding: 6rem;
+}
+body{
+    background-color: whitesmoke;
+}
+
+/* header and navbar ---- */
+
+
+header{
+
+    /* position: fixed; */
+    position: relative;
+    width: 100%;
+    /* z-index: -1; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.1);
+}
+
+
+header .logo{
+    font-size: 2.5rem;
+}
+
+header .navbar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header a{
+    margin-left: -260px;
+    text-decoration: none;
+}
+
+header .navbar a{
+font-size: 1.8rem;
+margin: 0.5rem;
+color:#666;
+text-decoration: none;
+cursor: pointer;
+}
+
+header .navbar a:hover{
+    color: red;
+}
+
+
+/* 2 part home section -------- */
+
+.home{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.home .content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    color:rgb(95, 82, 95);
+}
+.home h3{
+    font-size: 4rem;
+    padding: 4px;
+    margin-top: auto;
+    color:tomato;
+}
+
+.home .image{
+    margin-left: 200px;
+}
+.btn{
+    padding: 0px 0.5rem;
+    width: 100px;
+    height: 40px;
+    color: red;
+    border-radius: 5px;
+}
+.btn:hover{
+    color: whitesmoke;
+    background-color: tomato;
+}
+.home .image img{
+    border-radius: 50%;
+    animation: float 3s linear infinite;
+}
+
+    @keyframes float{
+        0%, 100%{
+            transform: translateY(0rem);
+        }
+    50%{
+        transform: translateY(3rem);
+    }
+
+}
+
+/* speciality part start third ------ */
+
+.speciality{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin-top: 90px;
+    text-align: center;
+}
+.speciality h1{
+    color:#666;
+    margin-left: 70px;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.speciality h1 span{
+    color: tomato;
+}
+
+.speciality .boxcontainer{
+    margin: 3rem;
+     width: 95%;
+     display: flex;
+    flex-wrap: wrap;
+}
+.speciality .boxcontainer .box{
+    border: 1px solid #666;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    flex: 1 1 30rem;
+    cursor: pointer;
+    margin: 10px;
+    height: 350px;
+    width: 300px;
+}
+
+.speciality .boxcontainer .box .image{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+.speciality .boxcontainer .box .content
+{
+    margin-top: -180px;
+
+}
+
+
+.speciality .boxcontainer .box:hover .content h3,
+.speciality .boxcontainer .box:hover .content p,
+.speciality .boxcontainer .box:hover
+{
+    color: white;
+    background-color: black;
+}
+
+.speciality .box h3{
+    font-size: 30px;
+}
+.speciality .box p{
+    text-align: center;
+    padding: 10px;
+    color: #666;
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+/* popular section css */
+
+.popular{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.popular h1{
+    font-size: 3.4rem;
+    color:orangered;
+}
+
+.popular .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: 5rem; */
+    justify-content: space-around;
+}
+
+.popular .box-container .box{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 300px;
+    height: 340px;
+    margin: 2rem;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.1);
+}
+.popular .box-container .box img{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    z-index: -1;
+}
+.popular .box-container span{
+    color: white;
+    border: 1px solid orangered;
+    height: 2rem;
+    width: 7rem;
+    margin: 1rem;
+    background-color: tomato;
+    border-radius: 5rem;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.popular .box-container .box h3{
+    margin-top: 18rem;
+    font-size: 2rem;
+    color:orangered;
+}
+
+.popular .box-container .box .content{
+    margin: 1rem;
+    color: #666;
+    /* text-align: center; */
+    font-size: 1.2rem;
+}
+
+.popular .box-container .box a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 5px;
+    height: 20px;
+    width: 80px;
+    border: 1px solid red;
+}
+
+
+/* gallery css */
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    margin-top: 5rem;
+}
+h1{
+    font-size: 40px;;
+    color: #666;
+    margin: 3rem;
+    height: 40px;
+}
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+
+}
+
+.gallery .box-container img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.1);
+    object-fit: cover;
+}
+
+.gallery .box-container .box{
+    justify-content: space-between;
+    margin-left:  10px;
+}
+
+.gallery .box-container .box h3{
+    color: red;
+    font-size: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+.gallery .box-container .box p{
+color: #666;
+font-size: 1.4rem;
+padding-left: 1rem;
+text-align: center;
+}
+
+span{
+color: tomato;
+}
+
+.contact-details{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    border-radius: 5px;
+    margin: 1rem;
+    border:1px solid #666;
+    background-color: #f3e7e7;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.contact-details h1{
+    margin-left: 50rem;
+}
+
+.contact-details img{
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 400px;
+    margin-left: -900px;
+    margin-top: 10rem;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 1px solid #666;
+}
+.contact-details form{
+    margin-top: 100px;
+    width: 500px;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.contact-details label{
+    font-size: large;
+    font-weight: bold;
+    color: red;
+}
+
+.contact-details button{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    margin-top: 5rem;
+    height: 2.5rem;
+    width: 5rem;
+    /* padding: 3rem; */
+}
+
+.footer{
+    margin: 1rem;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+.footer h2{
+    margin-left: 50rem;
+}
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+        width: 100%;
+    }
+
+    header a{
+        margin-left: 100px;
+    }
+    header .navbar a:hover{
+        color:red;
+    }
+
+    .home{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .home .image{
+        margin-top: 40px;
+        padding: 5px;
+        margin-left: -20px;
+    }
+    .btn{
+        padding: 0px 0.5rem;
+        width: 100px;
+        height: 40px;
+        color: red;
+        border-radius: 5px;
+        margin-top: 1.5rem;
+    }
+    .btn:hover{
+        color: whitesmoke;
+        background-color: tomato;
+    }
+    .contact-details h1{
+        margin-left: -10px;
+    }
+
+    .contact-details img{
+        height: 200px;
+        width: 200px;
+        margin-left: 5px;
+    }
+
+    .contact-details form{
+        height: 500px;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-details form label{
+        display: block;
+        margin: 1rem;
+    }
+
+    .contact-details form button{
+        width: 50px;
+    }
+
+}
+
+@media (max-width:380px) {
+    
+    header{
+        width: 100%;
+    }
+    header a{
+        position: relative  ;
+        margin-left: -10 0px;
+    }
+    
+    header .navbar{
+        top: 100%;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+
+    
+    header .navbar a:hover{
+        color:red;
+    }
+html{
+    font-size: 50%;
+}
+header .navbar a{
+    margin:1.5rem;
+   display: block;
+    padding: 1.5rem;
+}
+
+
+.home .content{
+    margin-top: 50px;
+}
+.home{
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.home .image{
+    margin-top: 40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -20px;
+}
+
+.home .image img{
+    width: 50%;
+}
+
+.contact-details h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+
+}
